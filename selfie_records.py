@@ -89,7 +89,3 @@ class SelfieRecordsSDK:
             return {"key": key, "value": "", "error": "No TXT records found"}
         return {"key": key, "value": "", "error": f"Failed to get TXT records: {str(error)}"}
 
-# Usage example
-sdk = SelfieRecordsSDK(debug=False)  # Set debug=True to enable debug logging
-records = sdk.get_records("hello@miguelmedeiros.dev", filters=["bitcoin-payment", "nostr"])
-print(records)
