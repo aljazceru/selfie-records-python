@@ -5,7 +5,7 @@ This is a python sdk for [selfie records](https://selfie-records.com/) that was 
 ## Usage example
 ```
 # test.py
-from selfie import SelfieRecordsSDK
+from selfie_records import SelfieRecordsSDK
 sdk = SelfieRecordsSDK()
 records = sdk.get_records("hello@miguelmedeiros.dev", filters=["bitcoin-payment", "nostr"])
 print(records)
